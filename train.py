@@ -4,6 +4,8 @@ from sklearn.metrics import classification_report, confusion_matrix, roc_auc_sco
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
+
+
 df_heart = pd.read_csv('SAHeart.csv', index_col=0)
 df_heart.head()
 df_heart.describe()
