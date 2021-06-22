@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 
 
 
+
+
 df_heart = pd.read_csv('SAHeart.csv', index_col=0)
 df_heart.head()
 df_heart.describe()
