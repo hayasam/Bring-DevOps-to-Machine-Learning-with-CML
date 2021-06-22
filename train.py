@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 
 
 
+
+
 df_heart = pd.read_csv('SAHeart.csv', index_col=0)
 df_heart.head()
 df_heart.describe()
@@ -45,7 +47,7 @@ for i in range(2):
         ax.text(j, i, cm[i, j], ha='center', va='center', color='red')
 
 plt.tight_layout()
-plt.savefig("cm.png",dpi=120) 
+plt.savefig("cm.png",dpi=120)
 plt.close()
 
 # Print classification report
@@ -56,5 +58,5 @@ print(classification_report(y_test, model.predict(X_test)))
 # Plot the ROC curve
 model_ROC = plot_roc_curve(model, X_test, y_test)
 plt.tight_layout()
-plt.savefig("roc.png",dpi=120) 
+plt.savefig("roc.png",dpi=120)
 plt.close()
